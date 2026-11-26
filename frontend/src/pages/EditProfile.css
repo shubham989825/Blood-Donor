@@ -1,0 +1,93 @@
+
+.edit-profile-page {
+  min-height: 80vh;
+  background: #fff7f7;
+  padding: 50px 20px;
+}
+
+.edit-profile-container {
+  max-width: 650px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.edit-profile-container h1 {
+  font-size: 27px;
+  color: #252525;
+}
+
+.edit-profile-container > p {
+  color: #777;
+  margin: 8px 0 28px;
+}
+
+.edit-profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.edit-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edit-form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.edit-form-group input,
+.edit-form-group select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+}
+
+.edit-form-group input:focus,
+.edit-form-group select:focus {
+  border-color: #e63946;
+}
+
+.edit-profile-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.edit-profile-actions button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #e63946;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-profile-actions .cancel-edit-btn {
+  background: #333;
+}
+
+@media (max-width: 550px) {
+  .edit-profile-container {
+    padding: 25px 20px;
+  }
+
+  .edit-profile-form {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-profile-actions {
+    flex-direction: column;
+  }
+}

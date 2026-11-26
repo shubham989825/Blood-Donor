@@ -106,12 +106,9 @@ function Profile() {
           </section>
 
           <div className="profile-actions">
-            <button
-              className="edit-profile-btn"
-              onClick={() => alert("Edit profile will be added later.")}
-            >
-              Edit Profile
-            </button>
+           <Link to="/edit-profile" className="edit-profile-btn">
+  Edit Profile
+</Link>
 
             <Link to="/" className="back-home-btn">
               Back to Home

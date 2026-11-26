@@ -7,6 +7,8 @@ import Donors from "./pages/Donors";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
+import EditProfile from "./pages/EditProfile";
+import BloodRequest from "./pages/BloodRequest";
 import "./App.css";
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/edit-profile" element={<EditProfile />} />
+        <Route path="/request-blood" element={<BloodRequest />} />
       </Routes>
 
       <Footer />
