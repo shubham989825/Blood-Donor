@@ -1,0 +1,192 @@
+
+.donors-page {
+  min-height: 75vh;
+  padding: 65px 9%;
+  background: #fffafa;
+}
+
+.donors-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.donors-header > span {
+  color: #d62839;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.donors-header h1 {
+  margin: 12px 0;
+  font-size: 36px;
+  color: #292929;
+}
+
+.donors-header p {
+  color: #777;
+  font-size: 14px;
+}
+
+.donor-filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 22px;
+  background: white;
+  border: 1px solid #f0dddd;
+  border-radius: 12px;
+}
+
+.donor-filters > div {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.donor-filters label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.donor-filters input,
+.donor-filters select {
+  height: 45px;
+  border: 1px solid #e6dada;
+  border-radius: 6px;
+  padding: 0 12px;
+  outline: none;
+}
+
+.donor-filters input:focus,
+.donor-filters select:focus {
+  border-color: #d62839;
+}
+
+.results-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 0 20px;
+  gap: 15px;
+}
+
+.results-heading h2 {
+  font-size: 21px;
+}
+
+.results-heading span {
+  color: #888;
+  font-size: 13px;
+}
+
+.donors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.no-donors {
+  padding: 65px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+}
+
+.no-donors span {
+  font-size: 45px;
+}
+
+.no-donors h3 {
+  margin: 15px 0 8px;
+}
+
+.no-donors p {
+  color: #777;
+  font-size: 13px;
+}
+
+.donor-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: #00000070;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.donor-modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 17px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.modal-avatar {
+  margin: 0 auto 15px;
+}
+
+.donor-modal h2 {
+  margin-bottom: 18px;
+}
+
+.donor-modal > p {
+  color: #666;
+  font-size: 13px;
+  margin: 12px 0;
+}
+
+.donor-modal .modal-note {
+  background: #fff3f3;
+  color: #a52332;
+  padding: 12px;
+  border-radius: 7px;
+  line-height: 1.6;
+}
+
+.donor-modal .view-profile-btn {
+  margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+  .donors-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .donors-page {
+    padding: 45px 5%;
+  }
+
+  .donors-header h1 {
+    font-size: 28px;
+  }
+
+  .donor-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .donors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,31 @@
+
+.register-card {
+  max-width: 470px;
+}
+
+.register-card select {
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.register-card select:focus {
+  border-color: #e63946;
+}
+
+.register-card input:focus {
+  border-color: #e63946;
+}
+
+.register-card form {
+  gap: 2px;
+}
+
+@media (max-width: 500px) {
+  .register-card {
+    padding: 25px 20px;
+  }
+}

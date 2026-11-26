@@ -1,9 +1,10 @@
-
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
   const [bloodGroup, setBloodGroup] = useState("A+");
+  const navigate = useNavigate();
   const [location, setLocation] = useState("");
   const [message, setMessage] = useState("");
 
@@ -14,6 +15,9 @@ function Home() {
       setMessage("Please enter your city or location.");
       return;
     }
+      navigate(
+    `/donors?bloodGroup=${encodeURIComponent(bloodGroup)}&location=${encodeURIComponent(location)}`
+  );
 
     setMessage(
       `Searching for ${bloodGroup} blood donors near ${location}.`
